@@ -6,6 +6,8 @@ extern "C" {
 
   typedef struct GText_Editor GText_Editor;
   typedef struct GText_Display GText_Display;
+  typedef struct Style_Table_Entry Style_Table_Entry;
+
   typedef struct Fl_Text_Buffer Fl_Text_Buffer;
 
   extern GText_Editor *go_fltk_new_TextEditor(int x, int y, int w, int h, const char *text);

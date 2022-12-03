@@ -15,6 +15,16 @@ public:
     : EventHandler<Fl_Text_Display>(x, y, w, h, label) {}
 };
 
+typedef GText_Display::Style_Table_Entry Style_Table_Entry;
+
+// struct Style_Table_Entry {
+//   Fl_Color    color;
+//   Fl_Font     font;
+//   Fl_Fontsize size;
+//   unsigned    attr;
+//   Fl_Color    bgcolor;
+// };
+
 GText_Display *go_fltk_new_TextDisplay(int x, int y, int w, int h, const char *text) {
   return new GText_Display(x, y, w, h, text);
 }
