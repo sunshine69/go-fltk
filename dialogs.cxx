@@ -1,10 +1,13 @@
 #include "dialogs.h"
 
 #include <FL/fl_ask.H>
+#include <FL/Fl_Color_Chooser.H>
 
 #include <stddef.h>
 #include <cstdlib>
 #include <cstring>
+
+#include "event_handler.h"
 
 void go_fltk_message_box(const char *title, const char* message) {
   fl_message_title(title);

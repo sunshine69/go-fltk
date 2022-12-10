@@ -62,4 +62,3 @@ const char* go_fltk_FileChooser_value(Fl_File_Chooser* fileChooser, int position
 char* go_fltk_file_chooser(const char* message, const char* pattern, const char* initialFilename, int relative) {
   return fl_file_chooser(message, pattern, initialFilename, relative);
 }
-

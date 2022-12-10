@@ -76,4 +76,3 @@ func SetDialogTitle(title string) {
 	defer C.free(unsafe.Pointer(titleC))
 	C.go_fltk_set_title_dialog(titleC)
 }
-
