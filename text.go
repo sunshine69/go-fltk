@@ -269,6 +269,12 @@ func (t *TextDisplay) MoveEnd() int {
 	return int(pos)
 }
 
+// MoveEndLine - Move the cursor to the end of the current line
+func (t *TextDisplay) MoveEndLine() int {
+	pos := C.go_fltk_TextDisplay_move_end_line( (*C.GText_Display)(t.ptr()) )
+	return int(pos)
+}
+
 type TextEditor struct {
 	TextDisplay
 }

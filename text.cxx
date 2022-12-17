@@ -121,6 +121,15 @@ int go_fltk_TextDisplay_move_end(GText_Display *d) {
   return lineEnd;
 }
 
+// Move insert to the end of display
+int go_fltk_TextDisplay_move_end_line(GText_Display *d) {
+  int currentPos = d->insert_position();
+  int lineEnd;
+  lineEnd = d->line_end(currentPos, false);
+  d->insert_position(lineEnd);
+  return lineEnd;
+}
+
 class GText_Editor : public EventHandler<Fl_Text_Editor> {
 public:
   GText_Editor(int x, int y, int w, int h, const char* label)

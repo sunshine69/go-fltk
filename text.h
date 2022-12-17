@@ -34,6 +34,7 @@ extern "C" {
   extern int go_fltk_TextDisplay_total_lines(GText_Display *d);
   extern int go_fltk_TextDisplay_line_to_position(GText_Display *d, int lineNum);
   extern int go_fltk_TextDisplay_move_end(GText_Display *d);
+  extern int go_fltk_TextDisplay_move_end_line(GText_Display *d);
 
   extern Fl_Text_Buffer *go_fltk_new_TextBuffer(void);
   extern void go_fltk_TextBuffer_delete(Fl_Text_Buffer* b);
